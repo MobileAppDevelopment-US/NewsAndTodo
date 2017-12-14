@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m8A-fv-9uh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="ng4-km-Z3M">
+            <objects>
+                <tabBarController id="m8A-fv-9uh" customClass="MainTabBarController" customModule="NewsAndTodo" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" translucent="NO" backgroundImage="TabbarBackground" id="DxV-Sd-mSb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.1529411765" green="0.66666666669999997" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Css-hb-Lmg" kind="relationship" relationship="viewControllers" id="rXQ-Et-U8L"/>
+                        <segue destination="jTe-sw-LOI" kind="relationship" relationship="viewControllers" id="qYM-rg-IFw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fme-f8-3fV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1247" y="99"/>
+        </scene>
+        <!--NewsNav-->
+        <scene sceneID="Gee-vP-vHB">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="NewsNav" storyboardName="NewsTableViewController" referencedIdentifier="NewsNav" id="jTe-sw-LOI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="ClockIcon" id="Usl-VT-Cv2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qUU-rJ-Zvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1495" y="611"/>
+        </scene>
+        <!--TodoListNav-->
+        <scene sceneID="0hf-6p-UQA">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TodoListNav" storyboardName="TodoListViewController" referencedIdentifier="TodoListNav" id="Css-hb-Lmg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Todo list" image="UserCircleIcon" id="cBL-1e-aMu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4oK-ES-GI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-952" y="611"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ClockIcon" width="24" height="24"/>
+        <image name="TabbarBackground" width="375" height="49"/>
+        <image name="UserCircleIcon" width="24" height="24"/>
+    </resources>
+</document>
